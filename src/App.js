@@ -50,7 +50,8 @@ const App = () => {
       <Appel/>
       <Infotwo/>
       <ImageWithButton/>
-
+      <ImageWithButton/>
+      <ImageWithButton/>
     </div>
   );
 };

@@ -1,5 +1,5 @@
 import React from 'react';
-import './guide.css'; // You can create a CSS file for styling
+import './guide.css';
 import image from '../images/canpeeee.jpg';
 
 const PictureComponent = () => {

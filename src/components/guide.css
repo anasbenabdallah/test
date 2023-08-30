@@ -1,40 +1,54 @@
-/* guide.css or PictureComponent.css */
 .picture-container {
-    position: relative;
-    display: inline-block;
-  }
-  
-  .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.7);
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .text {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-  }
-  
-  .button {
-    background-color: #3498db;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .picture {
-    max-width: 100%;
-    height: auto;
-    display: block;
-  }
-  
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  width: 30%;
+  margin-right: 10px; /* Add margin between each guide */
+}
+
+.picture-container:last-child {
+  margin-right: 0; /* Remove margin for the last guide */
+}
+
+.picture-container:hover .picture {
+  transform: scale(1.2); /* Increase the scale value to make the picture bigger */
+  filter: brightness(75%);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.text {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.button {
+  background-color: #616669b7;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-left: 500px;
+}
+
+.picture {
+  max-width: 100%; /* Limit image width to container */
+  max-height: 100%; /* Limit image height to container */
+  display: block;
+  transition: transform 0.3s, filter 0.3s;
+}

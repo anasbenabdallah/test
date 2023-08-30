@@ -12,6 +12,11 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+.image-button-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0; /* Add margin to space them vertically */
+}
 
 .App-header {
   background-color: #282c34;

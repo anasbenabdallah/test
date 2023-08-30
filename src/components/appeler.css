@@ -1,0 +1,75 @@
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .contact-left {
+    flex: 1;
+  }
+  
+  .people-image {
+    width: 300%;
+    max-width: 800px;
+    height: auto;
+  }
+  
+  .contact-right {
+    flex: 2;
+    padding: 20px;
+  }
+  
+  .contact-text {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .contact-description {
+    margin-top: 10px;
+    color: #888;
+  }
+  
+  .rounded-image-container {
+    margin-top: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 150px;
+    height: 150px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .canape-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+  .button-container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .contact-button {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+    margin-bottom: 10px;
+  }
+  
+  .hover-rose {
+    background-color: #ff66a5;
+    color: white;
+  }
+  
+  .hover-rose:hover {
+    background-color: white;
+    color: #ff66a5;
+  }
+  

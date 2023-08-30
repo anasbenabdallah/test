@@ -1,0 +1,35 @@
+/* ... Other styles ... */
+
+/* Adjust the navbar background color and text size */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #c5205b;
+  padding: 5px; /* Reduce padding */
+  font-size: 12px; /* Adjust font size */
+  font-weight: bold;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+  flex-grow: 1; /* Make the logo div grow to use available space */
+  display: flex;
+  align-items: center; /* Centers content vertically */
+  justify-content: center; /* Centers content horizontally */
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+.logo-text {
+  text-align: center;
+}
+
+.contact {
+  cursor: pointer;
+  color: white;
+}
+
+
+/* ... Other styles ... */

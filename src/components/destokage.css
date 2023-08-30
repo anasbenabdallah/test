@@ -1,0 +1,46 @@
+.destockage-container {
+  margin-top: 20px; /* Adjust the margin-top as needed */
+}
+
+.destockage-heading {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.image-containers {
+  display: flex;
+  justify-content: center;
+  .destockage-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    margin-top: 20px; /* Adjust the margin-top as needed */
+  }
+
+ 
+
+  .image-containers {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    overflow-x: auto;
+  }
+
+  img {
+    max-width: 100px;
+    height: auto;
+    border: 1px solid #ccc;
+    padding: 5px;
+  }
+
+  gap: 10px;
+  overflow-x: auto;
+}
+
+img {
+  max-width: 100px;
+  height: auto;
+  border: 1px solid #ccc;
+  padding: 5px;
+}

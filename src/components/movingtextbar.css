@@ -1,0 +1,24 @@
+.moving-text-navbar {
+  background-color: white; /* Set background color to white */
+  color: rgb(235, 40, 72); /* Set text color to pink */
+  text-align: center;
+  padding: 10px 0;
+  font-size: 18px;
+}
+
+marquee {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  padding-right: 100%; /* Force content to scroll horizontally */
+  animation: marquee 40s linear infinite;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}

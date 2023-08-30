@@ -1,0 +1,51 @@
+.title {
+  flex-grow: 1;
+  cursor: pointer;
+  background-color: white; /* Set background color to white */
+  color: black; /* Set text color to black */
+}
+
+.middle-section {
+  display: flex;
+  gap: 20px;
+  flex-grow: 2;
+  justify-content: center;
+  background-color: white; /* Set background color to white */
+  color: black; /* Set text color to black */
+}
+
+.nav-link {
+  cursor: pointer;
+  background-color: white; /* Set background color to white */
+  color: black; /* Set text color to black */
+}
+
+.right-section {
+  display: flex;
+  gap: 10px;
+  background-color: white; /* Set background color to white */
+  color: black; /* Set text color to black */
+}
+/* ... (Your previous CSS code) ... */
+
+.image-container {
+  display: flex;
+  justify-content: center; /* Horizontally centers the images */
+  flex-wrap: wrap; /* Allows images to wrap if they don't fit in a single line */
+  padding: 20px 0; /* Optional: Adds vertical padding around images for aesthetics */
+}
+
+/* Style for individual images */
+.image-container img {
+  max-width: 100%; /* Ensures the image doesn't overflow its container */
+  height: auto; /* Maintains the image aspect ratio */
+  margin: 40px; /* Adds distance around each image */
+  border-radius: 5px; /* Optional: Rounds the corners for aesthetics */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow for a raised effect */
+}
+
+.destockage-container {
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Centers children horizontally */
+}

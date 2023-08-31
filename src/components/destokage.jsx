@@ -18,7 +18,14 @@ const DestockageComponent = () => {
     "Canapé Amy"
   ]
   return (
-    <div className="destockage-container">
+    <div>
+   <div className="left-section">
+  <a href="#">Accueil</a> / <a href="#">Canapé convertible</a>
+</div>
+ <div className="right-section">
+ 55 magasins en France, + 5000 meubles en stock
+</div>
+        <div className="destockage-container">
       <h2 className="destockage-heading">CANAPÉ CONVERTIBLE</h2>
       <div className="image-containers">
         {imageUrls.map((imageUrl, index) => (
@@ -29,6 +36,10 @@ const DestockageComponent = () => {
         ))}
       </div>
     </div>
+       </div>
+    
+
+  
   );
 };
 

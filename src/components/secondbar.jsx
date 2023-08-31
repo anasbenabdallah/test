@@ -1,55 +1,74 @@
-import { AppBar, Toolbar, Typography, IconButton } from "@mui/material";
+import React, { useState } from 'react';
+import { AppBar, Toolbar, Typography, IconButton } from '@mui/material';
 import {
- 
   ShoppingCart,
   Search,
-
-} from "@mui/icons-material";
+} from '@mui/icons-material';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
-import "../components/secondbar.css";
-import logopic from  '../images/logo_black.svg'
+import '../components/secondbar.css';
+import logopic from '../images/logo_black.svg';
 import PersonIcon from '@mui/icons-material/Person';
 
 const SecondNavBar = () => {
+  // Define the dropdown data for each link
+  const dropdownData = {
+    'Canapé convertible': ['Item 1', 'Item 2', 'Item 3'],
+    'Armoire lit & Lit': ['Item 4', 'Item 5', 'Item 6'],
+    'Table extensible': ['Item 7', 'Item 8', 'Item 9'],
+  };
+
+  const [activeDropdown, setActiveDropdown] = useState(null);
+
   return (
-    <AppBar
-      position="static"
-      sx={{ backgroundColor: "white" }}
-      className="second-navbar"
-    >
+    <AppBar position="static" sx={{ backgroundColor: 'white' }} className="second-navbar">
       <Toolbar>
-        <Typography variant="h6" className="title">
-        <img
-          src={logopic}
-          alt="My Image"
-          style={{
-            maxWidth: "100%", // Make the image expand to its container width
-            height: "20px",   // Automatically adjust the height based on the width
-            margin: "30px -500px 20px 10px",
-            display: "block",
-          }}
-        />
+        <Typography variant="h5" className="title">
+          <img
+            src={logopic}
+            alt="My Image"
+            style={{
+              maxWidth: '100%',
+              height: '25px',
+              margin: '20px -500px 20px 10px',
+              display: 'block',
+            }}
+          />
         </Typography>
         <div className="middle-section">
-          <Typography className="nav-link">Canapé convertible</Typography>
-          <Typography className="nav-link">Armoire lit & Lit</Typography>
-          <Typography className="nav-link">Table extensible</Typography>
-          <Typography className="nav-link">Déstockage</Typography>
-          <Typography className="nav-link">Blog</Typography>
-          <Typography className="nav-link">À propos</Typography>
+          {/* Map over the dropdownData to generate the navigation links */}
+          {Object.keys(dropdownData).map((link, index) => (
+            <div
+              key={index}
+              className="nav-link-container"
+              onMouseEnter={() => setActiveDropdown(link)}
+              onMouseLeave={() => setActiveDropdown(null)}
+            >
+              <Typography className="nav-link">{link}</Typography>
+              {/* Display the dropdown if activeDropdown matches the current link */}
+              {activeDropdown === link && (
+                <div className="dropdown">
+                  {dropdownData[link].map((item, itemIndex) => (
+                    <div key={itemIndex} className="dropdown-item">
+                      {item}
+                    </div>
+                  ))}
+                </div>
+              )}
+            </div>
+          ))}
         </div>
         <div className="right-section">
           <IconButton>
             <Search />
           </IconButton>
           <IconButton>
-          <LocationOnIcon/>
+  <LocationOnIcon style={{ color: '#c5205b' }} />
+</IconButton>
+          <IconButton>
+            <PersonIcon />
           </IconButton>
           <IconButton>
-          <PersonIcon/> 
-          </IconButton>
-          <IconButton>
-          <ShoppingCart/>
+            <ShoppingCart />
           </IconButton>
         </div>
       </Toolbar>

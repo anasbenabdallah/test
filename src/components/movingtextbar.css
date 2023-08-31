@@ -1,24 +1,25 @@
 .moving-text-navbar {
-  background-color: white; /* Set background color to white */
-  color: rgb(235, 40, 72); /* Set text color to pink */
+  background-color: white;
+  color: rgb(235, 40, 72);
   text-align: center;
   padding: 10px 0;
   font-size: 18px;
+  font-weight: bold; /* Set font weight to bold */
+  overflow: hidden;
 }
-
-marquee {
+.marquee-container {
   display: inline-block;
   white-space: nowrap;
   overflow: hidden;
-  padding-right: 100%; /* Force content to scroll horizontally */
-  animation: marquee 40s linear infinite;
+  animation: marquee 0.08s linear infinite; /* Adjust animation duration as needed */
+  animation-delay: 1s; /* Delay before animation starts */
 }
 
 @keyframes marquee {
-  from {
-    transform: translateX(100%);
+  0% {
+    transform: translateX(0);
   }
-  to {
+  100% {
     transform: translateX(-100%);
   }
 }

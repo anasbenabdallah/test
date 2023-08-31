@@ -4,14 +4,17 @@ import "./movingtextbar.css";
 const MovingTextNavbar = () => {
   return (
     <div className="moving-text-navbar">
-      <marquee behavior="scroll" direction="left" scrollamount="4">
+      <marquee behavior="scroll" direction="left" scrollamount="30">
+        {/*scroll amount control how fast the text will move */}
         {/* Repeat the text four times */}
-        Profitez de remises jusqu'à 50% en magasin&nbsp;&nbsp;&nbsp;&nbsp;
-        Profitez de remises jusqu'à 50% en magasin&nbsp;&nbsp;&nbsp;&nbsp;
-        Profitez de remises jusqu'à 50% en magasin&nbsp;&nbsp;&nbsp;&nbsp;
-        Profitez de remises jusqu'à 50% en magasin&nbsp;&nbsp;&nbsp;&nbsp;
-        Profitez de remises jusqu'à 50% en magasin&nbsp;&nbsp;&nbsp;&nbsp;
-        Profitez de remises jusqu'à 50% en magasin
+        
+PROFITEZ DE REMISES -25% SUR LES CANAPÉS CONVERTIBLES ET BANQUETTES EN MAGASIN, PAR TEL. ET SUR LE SITE PRO&nbsp;&nbsp;&nbsp;&nbsp;
+PROFITEZ DE REMISES -25% SUR LES CANAPÉS CONVERTIBLES ET BANQUETTES EN MAGASIN, PAR TEL. ET SUR LE SITE PRO&nbsp;&nbsp;&nbsp;&nbsp;
+PROFITEZ DE REMISES -25% SUR LES CANAPÉS CONVERTIBLES ET BANQUETTES EN MAGASIN, PAR TEL. ET SUR LE SITE PRO&nbsp;&nbsp;&nbsp;&nbsp;
+PROFITEZ DE REMISES -25% SUR LES CANAPÉS CONVERTIBLES ET BANQUETTES EN MAGASIN, PAR TEL. ET SUR LE SITE PRO&nbsp;&nbsp;&nbsp;&nbsp;
+PROFITEZ DE REMISES -25% SUR LES CANAPÉS CONVERTIBLES ET BANQUETTES EN MAGASIN, PAR TEL. ET SUR LE SITE PRO&nbsp;&nbsp;&nbsp;&nbsp;
+PROFITEZ DE REMISES -25% SUR LES CANAPÉS CONVERTIBLES ET BANQUETTES EN MAGASIN, PAR TEL. ET SUR LE SITE PRO
+
       </marquee>
     </div>
   );

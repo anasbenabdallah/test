@@ -18,8 +18,38 @@
   cursor: pointer;
   background-color: white; /* Set background color to white */
   color: black; /* Set text color to black */
+  transition: color 0.3s; /* Add smooth transition for color change */
 }
 
+.nav-link-container {
+  position: relative; /* Required for positioning the dropdown */
+  display: inline-block; /* Display the link container inline */
+}
+.nav-link:hover {
+  color:#c5205b; /* Change text color to pink on hover */
+}
+.dropdown {
+  position: absolute;
+  top: 100%; /* Position the dropdown below the link */
+  left: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  z-index: 2; /* Ensure the dropdown is above other content */
+}
+
+.dropdown-item {
+  padding: 5px 10px;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.dropdown-item:hover {
+  background-color: #f4f4f4;
+  color: #c5205b;
+}
 .right-section {
   display: flex;
   gap: 10px;
